@@ -1,0 +1,22 @@
+[
+    {
+        "id":"371231238676e7q6w7e",
+        "username": "alice",
+        "name": "Alice Hilfiger",
+        "avatar": "http://www.vogatti.co.in/wp-content/uploads/2015/09/alice_smihts_tm.jpg",
+        "gender": "female",
+        "email": "test@pvh.com",
+        "phone": "+31612345678",
+        "password":"abc1234"
+    },
+    {
+        "id":"8829038908w90eqd9de",
+        "username": "morti",
+        "name": "Morteza Taghdisi",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXLw4g9oSA1J8gEyjRDHObBGBMAqoHLpc02UVDtIONmua2XaIxKg",
+        "gender": "male",
+        "email": "morti@pvh.com",
+        "phone": "+31123456709",
+        "password":"abc1234"
+    }
+]

@@ -1,0 +1,34 @@
+[
+        {
+            "id":"3113d13df123fd1d1",
+            "number": 7,
+            "street": "Danzigerkade",
+            "city": "Amsterdam",
+            "zipcode": "1234 AB",
+            "user_id":"371231238676e7q6w7e"
+        },
+        {
+            "id":"3123424234234",
+            "number": 17,
+            "street": "Danzigerkade",
+            "city": "Amsterdam",
+            "zipcode": "23422 AB",
+            "user_id":"371231238676e7q6w7e"
+        },
+        {
+            "id":"3422424edsd",
+            "number": 87,
+            "street": "Danzigerkade",
+            "city": "Amsterdam",
+            "zipcode": "1111 AB",
+            "user_id":"8829038908w90eqd9de"
+        },
+        {
+            "id":"jk4kl2342j4kj22",
+            "number": 57,
+            "street": "Danzigerkade",
+            "city": "Amsterdam",
+            "zipcode": "1222 AB",
+            "user_id":"8829038908w90eqd9de"
+        }
+]

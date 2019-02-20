@@ -1,0 +1,23 @@
+{
+    "status": true,
+    "data": {
+        "id": "USER123450000",
+        "username": "morti",
+        "avatar": "https://via.placeholder.com/200",
+        "name": "Alex Morphy",
+        "gender": "male",
+        "email": "morteza.taghdisi@yahoo.com",
+        "phone": "+9126272680",
+        "token": "ABCD",
+        "address": [
+            {
+                "id": "ADRESS123450000",
+                "number": 15,
+                "street": "Saadat abad",
+                "city": "Tehran",
+                "zipcode": "12345 69785",
+                "user_id": "USER123450000"
+            }
+        ]
+    }
+}

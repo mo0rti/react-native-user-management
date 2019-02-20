@@ -1,0 +1,47 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject",
+    "test": "node ./node_modules/jest/bin/jest.js --watchAll",
+    "test:watch": "npm test -- --watch"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "moduleNameMapper": {
+      "^@Root(.*)$": "<rootDir>/src$1",
+      "^@Components(.*)$": "<rootDir>/src/components$1",
+      "^@Actions(.*)$": "<rootDir>/src/actions$1",
+      "^@Constants(.*)$": "<rootDir>/src/constants$1",
+      "^@Reducers(.*)$": "<rootDir>/src/reducers$1",
+      "^@Helpers(.*)$": "<rootDir>/src/helpers$1"
+    },
+    "verbose": true
+  },
+  "dependencies": {
+    "@expo/samples": "2.1.1",
+    "expo": "^32.0.0",
+    "react": "16.5.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+    "react-native-extended-stylesheet": "^0.11.1",
+    "react-native-flexi-radio-button": "^0.2.2",
+    "react-native-responsive-screen": "^1.2.0",
+    "react-navigation": "^3.0.9"
+  },
+  "devDependencies": {
+    "babel-preset-expo": "^5.0.0",
+    "fetch-mock": "^7.3.0",
+    "jest": "^24.1.0",
+    "jest-expo": "^32.0.0",
+    "react-redux": "^6.0.0",
+    "react-test-renderer": "^16.8.2",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-mock-store": "^1.5.3",
+    "redux-persist": "^5.10.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "private": true
+}

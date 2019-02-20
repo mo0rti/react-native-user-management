@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App snapshot renders the loading screen 1`] = `null`;
+
+exports[`App snapshot renders the root without loading screen 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    enabled={false}
+    hitSlop={
+      Object {
+        "bottom": 135,
+      }
+    }
+    maxDeltaX={15}
+    minOffsetY={5}
+    onGestureEvent={[Function]}
+    onHandlerStateChange={[Function]}
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#eee",
+          "flex": 1,
+          "flexDirection": "column-reverse",
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          pointerEvents="auto"
+          style={
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "opacity": 1,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "transform": Array [
+                Object {
+                  "translateX": 0,
+                },
+                Object {
+                  "translateY": 0,
+                },
+              ],
+            }
+          }
+        >
+          <View
+            accessibilityElementsHidden={false}
+            style={
+              Object {
+                "backgroundColor": "#fff",
+                "flex": 1,
+              }
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "white",
+                    "flex": 1,
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                  },
+                  Object {
+                    "paddingTop": 0,
+                  },
+                  Object {
+                    "alignItems": "center",
+                  },
+                ]
+              }
+            >
+              <Image
+                source={1}
+                style={
+                  Object {
+                    "height": 350,
+                    "width": 271,
+                  }
+                }
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

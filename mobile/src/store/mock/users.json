@@ -1,0 +1,32 @@
+{
+    "status": true,
+    "data": [
+        {
+            "id": "wrwerwr3454354353",
+            "username": "morti",
+            "avatar": "https://via.placeholder.com/200",
+            "name": "Morteza Taghdisi",
+            "gender": "male",
+            "email": "morteza.taghdisi@yahoo.com",
+            "phone": "+9126272680"
+        },
+        {
+            "id": "ghfghgfh7687867",
+            "username": "alex",
+            "avatar": "https://via.placeholder.com/200",
+            "name": "Alex Morphi",
+            "gender": "female",
+            "email": "alex@yahoo.com",
+            "phone": "+314589222"
+        },
+        {
+            "id": "utyoo657567",
+            "username": "tommy",
+            "avatar": "https://via.placeholder.com/200",
+            "name": "Tommy Hilfiger",
+            "gender": "male",
+            "email": "test@pvh.com",
+            "phone": "+31612345678"
+        }
+    ]
+}

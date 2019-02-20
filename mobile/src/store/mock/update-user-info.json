@@ -1,0 +1,24 @@
+{
+    "status": true,
+    "data": {
+        "id": "f16999c0-d9f9-4e67-9031-5450fd0778ea",
+        "username": "morti",
+        "name": "Morteza Taghdisi",
+        "gender": "male",
+        "email": "morteza.taghdisi@yahoo.com",
+        "phone": "+9126272680",
+        "avatar": "https://via.placeholder.com/200",
+        "token": "ABCD",
+        "address": [
+            {
+                "id": "17f543ca-6117-4d75-b3e1-cc3d10c5b59e",
+                "number": 15,
+                "street": "Saadat abad",
+                "city": "Tehran",
+                "zipcode": "12345 69785",
+                "user_id": "f16999c0-d9f9-4e67-9031-5450fd0778ea"
+            }
+        ]
+    },
+    "message":"Update Was Successfull"
+}
