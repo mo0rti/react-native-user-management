@@ -17,7 +17,7 @@ class SignUpScreen extends Component {
             name: '',
             phone: '',
             gender: 'male',
-            avatar: "https://via.placeholder.com/200",
+            avatar: "",
             city: '',
             street: '',
             number: '',

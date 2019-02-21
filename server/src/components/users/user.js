@@ -10,7 +10,7 @@ class User {
         this.gender = gender;
         this.email = email;
         this.phone = phone;
-        this.avatar = avatar || (gender == "male") ? getRandomMaleAvatar() : getRandomFemaleAvatar();
+        this.avatar = avatar || ((gender == "male") ? getRandomMaleAvatar() : getRandomFemaleAvatar());
         this.token = token || uuidv4();
         this.password = password;
         this.address = address || [];
