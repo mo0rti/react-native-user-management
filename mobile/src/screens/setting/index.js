@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import NavigationService from '@Navigations/Navigation-Service';
 import { PvhHeader, PvhToast } from '@Components';
 import { deleteUser } from "@Actions/User-Account-Delete-Action";
 import Layout from "./Layout";
