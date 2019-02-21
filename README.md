@@ -83,7 +83,7 @@ To set the server endpoints urls, find the file in this path: `./mobile/src/cons
 <img src="https://github.com/MortiTotti/react-native-user-management/blob/master/screenshots/sign-up.png" width="400" aspectRatio="1/2">
 
 ##### Home - Users screen
-<img src="https://github.com/MortiTotti/react-native-user-management/blob/master/screenshots/users-screen.png" width="400" aspectRatio="1/2">
+<img src="https://github.com/MortiTotti/react-native-user-management/blob/master/screenshots/users-screen.jpg" width="400" aspectRatio="1/2">
 
 ##### Edit User screen
 <img src="https://github.com/MortiTotti/react-native-user-management/blob/master/screenshots/user-edit-screen.png" width="400" aspectRatio="1/2">
