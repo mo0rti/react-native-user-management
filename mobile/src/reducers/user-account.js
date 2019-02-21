@@ -37,6 +37,16 @@ const userAccount = (state = initState, action) => {
     case actiontype.USER_ACCOUNT.SIGN_UP_SUCCESSFUL: {
       return Object.assign({}, state, { isRequesting: false, user: action.payload.user, error: { code: "", message: "" } });
     }
+    //------------------- SIGN OUT
+    case actiontype.USER_ACCOUNT.SIGN_OUT_REQUESTED: {
+      return Object.assign({}, state, { isRequesting: true, error: { code: "", message: "" } });
+    }
+    case actiontype.USER_ACCOUNT.SIGN_OUT_FAILED: {
+      return Object.assign({}, state, { isRequesting: false, error: { ...action.payload } });
+    }
+    case actiontype.USER_ACCOUNT.SIGN_OUT_SUCCESSFUL: {
+      return Object.assign({}, state, { isRequesting: false, user: action.payload, error: { code: "", message: "" } });
+    }
     //------------------- ACCOUNT UPDATE
     case actiontype.USER_ACCOUNT.UPDATE_REQUESTED: {
       return Object.assign({}, state, { isRequesting: true, error: { code: "", message: "" } });

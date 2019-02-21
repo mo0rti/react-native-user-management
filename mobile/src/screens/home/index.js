@@ -29,12 +29,6 @@ class HomeScreen extends Component {
         };
     }
 
-    // _updateList= (items)=>{
-    //     this.setState({
-    //         items
-    //       })
-    // }
-
     componentDidMount() {
         this._load();
     }

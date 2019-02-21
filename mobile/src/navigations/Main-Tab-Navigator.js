@@ -4,6 +4,7 @@ import { createStackNavigator, createBottomTabNavigator } from 'react-navigation
 
 import { PvhTabBarIcon } from '@Components';
 import HomeScreen from '@Screens/home';
+import AccountScreen from '@Screens/account';
 
 import { defaultNavigationOptions } from '@Constants/Styles';
 
@@ -23,6 +24,23 @@ HomeStack.navigationOptions = {
   )
 };
 
+const AccountStack = createStackNavigator({ AccountScreen }, { defaultNavigationOptions });
+
+AccountStack.navigationOptions = {
+  tabBarLabel: 'Account',
+  tabBarIcon: ({ focused }) => (
+    <PvhTabBarIcon
+      focused={focused}
+      name={
+        Platform.OS === 'ios'
+          ? `ios-information-circle${focused ? '' : '-outline'}`
+          : 'md-information-circle'
+      }
+    />
+  )
+};
+
 export default createBottomTabNavigator({
-  HomeStack
+  HomeStack,
+  AccountStack
 });

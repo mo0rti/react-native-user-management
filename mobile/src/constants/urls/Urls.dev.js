@@ -1,4 +1,4 @@
-const BASE_URL = "http://192.168.43.185:3001";
+const BASE_URL = "http://localhost:3001";
 
 export default {
     USER: {
