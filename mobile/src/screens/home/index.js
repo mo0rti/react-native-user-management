@@ -29,12 +29,6 @@ class HomeScreen extends Component {
         };
     }
 
-    // _updateList= (items)=>{
-    //     this.setState({
-    //         items
-    //       })
-    // }
-
     componentDidMount() {
         this._load();
     }
@@ -45,11 +39,12 @@ class HomeScreen extends Component {
     _onItemSelected = (user) => {
         this.props.getUserInfo({ id: user.id })
             .then(returnedUser => {
-                NavigationService.navigate("Edit", { user: returnedUser });
+                NavigationService.navigate("Edit", { user: returnedUser, onGoBack: () => this._listRefresh() });
             })
             .catch(error => PvhToast.showError(error.message || error));
 
     }
+
     _listRefresh = () => this.setState({ refreshing: true, page: 1, items: [] }, () => this._load());
     _listLoadMore = () => {
         if (this.state.noMoreRecords) return;

@@ -14,8 +14,8 @@ const withUserParams = (WrappedComponent) => {
         static router = WrappedComponent.router;
         render() {
             const { navigation } = this.props;
-            const { user } = navigation.state.params;
-            const screenProps = { user: user };
+            const { user, onGoBack } = navigation.state.params;
+            const screenProps = { user, onGoBack };
 
             return <WrappedComponent navigation={navigation} screenProps={screenProps} />;
         }

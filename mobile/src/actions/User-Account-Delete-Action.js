@@ -38,7 +38,7 @@ export const deleteUser = (id) => async (dispatch) => {
         let { status, message } = await _deleteUser(id);
         if (status) {
             dispatch(_done());
-            return Promise.resolve();
+            return Promise.resolve(status);
         } else {
             dispatch(_failed({ message }));
             return Promise.reject({ message });

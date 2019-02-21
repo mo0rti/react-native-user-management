@@ -15,10 +15,13 @@ class SettingScreen extends Component {
     }
 
     _deleteAccount = () => {
-        let { user } = this.props.screenProps;
+        let { user, onGoBack } = this.props.screenProps;
         this.props.deleteUser(user.id)
-            .then(() => {
-                this.props.navigation.popToTop();
+            .then(result => {
+                onGoBack();
+                console.log(result);
+                PvhToast.showSuccess("Successfully deleted");
+                this.props.navigation.goBack();
             })
             .catch(error => PvhToast.showError(error.message || error));
     }

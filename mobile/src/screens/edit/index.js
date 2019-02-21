@@ -71,14 +71,17 @@ class EditScreen extends Component {
 
     _edit = () => {
         let { id, ...user } = this.state;
+        let { onGoBack } = this.props.screenProps;
         if (!this._isDataValid(this.state)) return;
 
         this.props.update({ id, user })
             .then((result) => {
-                return PvhToast.showError(result);
+                onGoBack();
+                this.props.navigation.goBack();
+                PvhToast.showSuccess(result);
             })
             .catch(error => {
-                return PvhToast.showError(error.message || error);
+                PvhToast.showError(error.message || error);
             });
     };
 

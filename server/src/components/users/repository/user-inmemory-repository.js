@@ -41,8 +41,9 @@ class UserInMemoryRepository {
     }
 
     delete(id) {
+        let usersCount = USERS.length;
         USERS = USERS.filter(user => user.id != id);
-        return Promise.resolve();
+        return (USERS.length != usersCount) ? Promise.resolve(true) : Promise.reject("User not found");
     }
 }
 

@@ -12,6 +12,7 @@ class SignInScreen extends Component {
             username: '',
             password: '',
             error: {},
+            isRequesting: false
         };
     }
 
@@ -33,19 +34,27 @@ class SignInScreen extends Component {
     }
 
     _signin = () => {
-        let { username, password } = this.state;
-        let { navigation, signin } = this.props;
-        if (!this._isDataValid(this.state)) return;
+        this.setState({ isRequesting: true }, () => {
+            let { username, password } = this.state;
+            let { navigation, signin } = this.props;
+            if (!this._isDataValid(this.state)) return;
 
-        signin({ username, password })
-            .then(() => navigation.navigate('App'))
-            .catch(error => PvhToast.showError(error.message || error));
+            signin({ username, password })
+                .then(() => {
+                    this.setState({ isRequesting: false });
+                    navigation.navigate('App');
+                })
+                .catch(error => {
+                    this.setState({ isRequesting: false });
+                    PvhToast.showError(error.message || error);
+                })
+        });
     };
 
     _signup = () => this.props.navigation.navigate('Signup');
 
     render() {
-        const { isRequesting } = this.props;
+        const { isRequesting } = this.state;
         return (
             <Layout
                 isRequesting={isRequesting}
@@ -62,8 +71,4 @@ SignInScreen.navigationOptions = () => ({
     header: null,
 });
 
-const mapStateToProps = ({ account }) => ({
-    isRequesting: account.isRequesting
-})
-
-export default connect(mapStateToProps, { signin })(SignInScreen);
+export default connect(null, { signin })(SignInScreen);
