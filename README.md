@@ -1,5 +1,5 @@
 # react-native-user-management
-A simple react native user management app
+A simple React Native user management app with Node-Js as back-end
 
 ## Explanation
 This is a React-Native application (using expo) to demonstrate a user sign-in flow with a Node.js as its back-end.
