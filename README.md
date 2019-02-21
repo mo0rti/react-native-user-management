@@ -25,10 +25,10 @@ for the server side
 
 ### Server
 ##### Explanation
-Server side stack is Node js - Express js.
+Server side stack is Node js - Express js. In folder `database` there are a number of scripts to create a database with two tables called `users` and `address`. To insert default data, there are two files in the json format, which insert a number of primary records in these two tables.
 
 ##### Configuration
-you can find the configuration file in **`./server/src/settings.json`**.
+You can find the server configuration file in the following path: **`./server/src/settings.json`**.
 
 ###### Options  for settings.json 
 ```
@@ -67,13 +67,24 @@ There are two mock data files, one for user and another  for address. These mock
 
 ### React Native
 ##### Explanation
-This application has been implemented using Expo.
+This application has been implemented using Expo. There are 4 main screens in this application:
+1. SignIn Screen
+2. SignUp Screen
+3. Home Screen (Tab screen)
+	1. List screen >> To show the users list
+	2. Sign out
+4. User Account Edit Screen (Tab screen)
+	1. User Main Information
+	2. User Addresses
+	3. Delete User 
 
 ##### Configuration
-you can find the configuration for this application in **`./client/src/constants/settings.js`**.
-To use mock data without calling any API service from the server set the `USE_MOCK_SERVICES` in this file to `true`;
-To set the server endpoints urls, find the file in this path: `./mobile/src/constants/urls/Urls.dev.js` and change the `BASE_URL`;
-
+The program also has the ability to work without connecting to the server. There are some json files which contain with mock data.
+You can find these files in the following path: **`./mobile/src/store/mock`**.
+You can find the configuration for this application in **`./mobile/src/constants/settings.js`**.
+To use mock files set the `USE_MOCK_SERVICES` in this file to `true`;
+All urls to call the server endpoints are inside a file in the following path: **`./mobile/src/constants/urls/Urls.dev.js`**
+In `Urls.dev.js` set the `BASE_URL` with the Node-Js server url (IP address is recommended).
 
 ### Screen shots
 ##### Sign in screen
@@ -85,12 +96,12 @@ To set the server endpoints urls, find the file in this path: `./mobile/src/cons
 ##### Home - Users screen
 <img src="https://github.com/MortiTotti/react-native-user-management/blob/master/screenshots/users-screen.jpg" width="400" aspectRatio="1/2">
 
-##### Edit User screen
+##### User Main Information
 <img src="https://github.com/MortiTotti/react-native-user-management/blob/master/screenshots/user-edit-screen.png" width="400" aspectRatio="1/2">
 
-##### Edit User Address screen
+##### User Addresses
 <img src="https://github.com/MortiTotti/react-native-user-management/blob/master/screenshots/user-edit-address.png" width="400" aspectRatio="1/2">
 
-##### Remove User account screen
+##### Delete User 
 <img src="https://github.com/MortiTotti/react-native-user-management/blob/master/screenshots/user-delete-account.png" width="400" aspectRatio="1/2">
 
