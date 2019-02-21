@@ -47,7 +47,7 @@ you can find the configuration file in **`./server/src/settings.json`**.
 | db_type | `in_memory` to use a in memory database, `db` to use a MySql database   |
 | db_config | The connection configuration for database when `db_type` value is `db` |
 
-There are two mock data files, one for user and another  for address. These mock files will be injected into database when the `db_type` is `in_memory` as initialization data;
+There are two mock data files, one for user and another  for address. These mock files will be injected as initialization data into database when the `db_type` is `in_memory`;
 - `./server/src/components/users/repository/mock.json`
 - `./server/src/components/address/repository/mock.json`
 
@@ -67,12 +67,12 @@ There are two mock data files, one for user and another  for address. These mock
 
 ### React Native
 ##### Explanation
-This application has been implemented based on Expo.
+This application has been implemented using Expo.
 
 ##### Configuration
 you can find the configuration for this application in **`./client/src/constants/settings.js`**.
 To use mock data without calling any API service from the server set the `USE_MOCK_SERVICES` in this file to `true`;
-To set the server endpoint url, find the file in this path: `./mobile/src/constants/urls/Urls.dev.js` and change the `BASE_URL`;
+To set the server endpoints urls, find the file in this path: `./mobile/src/constants/urls/Urls.dev.js` and change the `BASE_URL`;
 
 
 ### Screen shots
