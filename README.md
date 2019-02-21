@@ -11,6 +11,7 @@ On the server side, there are two types of repositories
 
 for the server side
 - Run **`yarn`** to install the packages.
+- Run **`npm install -g babel-cli`** to install babel_node.
 - Run **`npm run start`** to start the server.
 
 ### React native Installation & Run
