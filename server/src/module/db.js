@@ -4,8 +4,13 @@ import settings from "../common/settings";
 class Database {
     constructor(config) {
         if (!config)
-            config = settings.dbConfig;
-        this.connection = mysql.createConnection(config);
+            config = settings.db_config;
+        this.connection = mysql.createConnection({
+            "host": "192.168.43.185",
+            "user": "mmttt89",
+            "password": "hhayty",
+            "database": "user_management"
+        });
     }
 
     query(sql, args) {

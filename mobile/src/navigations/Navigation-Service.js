@@ -21,15 +21,8 @@ function goBack() {
     );
 }
 
-function Pop() {
-    _navigator.dispatch(
-        NavigationActions.pop()
-    );
-}
-
 export default {
     navigate,
-    goBack,
-    Pop,
-    setTopLevelNavigator,
+    goBack,    
+    setTopLevelNavigator,    
 };

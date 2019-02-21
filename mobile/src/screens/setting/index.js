@@ -18,7 +18,7 @@ class SettingScreen extends Component {
         let { user } = this.props.screenProps;
         this.props.deleteUser(user.id)
             .then(() => {
-                NavigationService.goBack()
+                this.props.navigation.popToTop();
             })
             .catch(error => PvhToast.showError(error.message || error));
     }

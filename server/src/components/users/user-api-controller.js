@@ -3,7 +3,7 @@ var router = Router();
 
 import UserService from "./user-service";
 
-router.post('/signin', function (req, res, next) {
+router.post('/signin', function (req, res, next) {  
   let userService = new UserService();
   let result = userService.signIn(req.body);
   result

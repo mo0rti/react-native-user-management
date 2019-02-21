@@ -28,7 +28,7 @@ class SplashScreen extends Component {
         await Promise.all([preparefonts(), letTheTimePass()]);
 
         this.props.navigation.navigate(token ? 'App' : 'Auth');
-        //this.props.navigation.navigate('Auth');
+        // this.props.navigation.navigate('Auth');
     }
 
     _loadFontsAsync = async () => {

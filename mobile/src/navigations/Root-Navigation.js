@@ -25,6 +25,8 @@ const AppStackNavigation = createStackNavigator(
         headerMode: 'none'
     }
 );
+const AppStackNavigationWithRef = () => 
+<AppStackNavigation ref={NavigationService.setAppStackNavigationRef}/>;
 
 const FlowNavigator = createSwitchNavigator(
     {

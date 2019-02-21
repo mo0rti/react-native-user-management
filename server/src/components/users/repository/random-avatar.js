@@ -15,5 +15,5 @@ const femaleAvatars = [
     "http://marionmodels.com/wp-content/uploads/2015/09/helen_klover_tm.jpg"
 ]
 
-export const getRandomMaleAvatar = () => maleAvatars[Math.random() * 5];
-export const getRandomFemaleAvatar = () => femaleAvatars[Math.random() * 4];
+export const getRandomMaleAvatar = () => maleAvatars[Math.floor(Math.random() * Math.floor(6))];
+export const getRandomFemaleAvatar = () => femaleAvatars[Math.floor(Math.random() * Math.floor(5))];
