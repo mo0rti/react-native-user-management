@@ -35,9 +35,9 @@ You can find the server configuration file in the following path: **`./server/sr
 {
   	"db_type": "in_memory",
     "db_config": {
-        "host": "192.168.1.104",
-        "user": "mmttt89",
-        "password": "hhayty",
+        "host": "your_db_ip",
+        "user": "your_db_username",
+        "password": "your_db_password",
         "database": "user_management"
 	}
 }
