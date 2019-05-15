@@ -1,8 +1,8 @@
-# react-native-user-management
-A simple React Native user management app with Node-Js as back-end
+# User Management by react-native
+A React Native application which enables the user to list all the user accounts and modify their information. For the backend used Node-Js.
 
 ## Explanation
-This is a React-Native application (using expo) to demonstrate a user sign-in flow with a Node.js as its back-end.
+This is a React-Native application (using expo) for a administrator user to modify, delete or add a user account. You can use the sign up flow of this application in another application to let the user login and register in that application.
 On the server side, there are two types of repositories
  - In Memory database
  - My sql database
